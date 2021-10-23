@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@media (max-width: 450px){
+    #formulario {
+        background-color: yellow;
+    }
+
+    #cadastro input {
+        display: inline;
+        margin: 8px;
+        height: 45px;
+    }
+
+    section#cadastro {
+        height: 500px;
+    }
+
+    #cadastro label {
+        font-size: 20px;
+    }
+
+    #cadastro .buscar {
+        height: 55px;
+        font-size: 12px;
+    }
+    
+}
+
+#header-top {
+    height: 200px;
+    background: linear-gradient(to left, #0D47A1, #3D5AFE, #2196F3, #3D5AFE, #0D47A1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#header-top #container-header {
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.material-icons-outlined {
+    margin-top: 50px;
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    border-radius: 55px;
+    color: #2196F3;
+}
+
+.material-icons-outlined.md-18 {
+    font-size: 100px;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-size: 13px;
+}
+
+section#cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+#cadastro label {
+    margin: 12px 0 -6px 7px;
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 17px;
+}
+
+#cadastro input {
+    display: block;
+    margin: 8px;
+    width: 440px;
+}
+
+#cep, #rua, #bairro, #cidade, #estado {
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: -155px;
+}
+
+#cadastro #buscar {
+    cursor: pointer;
+    border: 0;
+    padding: 15px;
+    color: white;
+    background-color: #2196F3;
+    border-radius: 8px;
+    font-size: 18px;
+    border-bottom: 5px solid #0D47A1;
+    transition: background .2s;
+}
+
+#cadastro #buscar:active {
+    background-color: #0D47A1;
+}

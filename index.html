@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Desafio 2</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header id="header-top">
+            <div id="container-header">
+                <h1 id="titulo">ME ACHA!</h1>
+                <h4 id="subtitulo">ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h4>
+                <span class="material-icons-outlined md-18">travel_explore</span>
+            </div>
+        </header>
+
+        <section id="cadastro">
+            <form id="formulario" name="cadastro" method="get">
+
+                <label for="cep">Cep</label>
+                    <input type="text" id="cep" name="cep" value="">
+                <label for="rua">Rua</label>
+                    <input type="text" id="rua" name="rua" value="" readonly>
+                <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" value="" readonly>
+                <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" name="cidade" value="" readonly>
+                <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" value="" readonly>
+
+                <input id="buscar" type="submit" name="enviarDados" value="BUSCAR">
+            </form>
+        </section>
+    </body>
+</html>
