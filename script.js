@@ -22,7 +22,7 @@ window.onload = function(){
         limparFormulario();
 
         const cep = document.querySelector("#cep").value;
-        let url = `http://viacep.com.br/ws/${cep}/json/`;
+        let url = `https://viacep.com.br/ws/${cep}/json/`;
 
         if(cepValido(cep)){
             const dados = await fetch(url);
