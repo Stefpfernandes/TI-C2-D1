@@ -31,6 +31,7 @@ window.onload = function(){
             if(endereco.hasOwnProperty('erro')){
                 document.querySelector("#rua").value = (`O Cep: ${cep} não foi encontrado! 
                 Por favor digite outro.`)
+                return;
             } else {
                 preencherFormulario(endereco);
             }
@@ -39,15 +40,7 @@ window.onload = function(){
         }
     }
 
-    // document.querySelector("#cep").addEventListener('focusout', pesquisarCep);
-
     const cep = document.querySelector("#cep");
     const botao = document.querySelector("#buscar");
-
-    botao.addEventListener('click', function(){
-        addEventListener('click', pesquisarCep);
-    })
-    
-
-    
+    botao.addEventListener('click', pesquisarCep);
 }
