@@ -40,13 +40,5 @@ window.onload = function(){
     }
 
     document.querySelector("#cep").addEventListener('focusout', pesquisarCep);
-    // const cep = document.querySelector("#cep");
-    // const botao = document.querySelector("#buscar");
 
-    // botao.addEventListener('click', function(){
-        
-    // })
-    // addEventListener('click', pesquisarCep);
-
-    
 }
