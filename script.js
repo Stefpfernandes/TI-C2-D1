@@ -29,7 +29,7 @@ window.onload = function(){
             const endereco = await dados.json();
 
             if(endereco.hasOwnProperty('erro')){
-                alert(`O Cep: ${cep} não foi encontrado! 
+                document.querySelector("#rua").value = (`O Cep: ${cep} não foi encontrado! 
                 Por favor digite outro.`)
             } else {
                 preencherFormulario(endereco);
@@ -39,6 +39,15 @@ window.onload = function(){
         }
     }
 
-    document.querySelector("#cep").addEventListener('focusout', pesquisarCep);
+    // document.querySelector("#cep").addEventListener('focusout', pesquisarCep);
 
+    const cep = document.querySelector("#cep");
+    const botao = document.querySelector("#buscar");
+
+    botao.addEventListener('click', function(){
+        addEventListener('click', pesquisarCep);
+    })
+    
+
+    
 }
